@@ -1,0 +1,134 @@
+/* Remove default bullets */
+ul,
+#myUL {
+    list-style-type: none;
+}
+
+button {
+    background:#454B66;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    width:100px;
+    height:40px
+}
+
+.button-pressed {
+    background: #797A9E;
+}
+
+/* Remove margins and padding from the parent ul */
+#myUL {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the caret/arrow */
+.caret {
+    cursor: pointer;
+    user-select: none;
+    /* Prevent text selection */
+}
+
+/* Create the caret/arrow with a unicode, and style it */
+.caret::before {
+    content: "\25B6";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+.caret-down::before {
+    transform: rotate(90deg);
+}
+
+/* Hide the nested list */
+.nested {
+    display: none;
+}
+
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+.active {
+    display: block;
+}
+
+.bullett {
+    list-style: circle;
+}
+
+.topList {
+    height: 100%;
+}
+
+.listItem {
+    cursor: text;
+    margin: 5px;
+    margin-left: 0px;
+    -moz-user-select: text;
+    -khtml-user-select: text;
+    -webkit-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+.listItem.page {
+    display: none;
+}
+
+body {
+    background: #F4F7FB;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Courier New';
+}
+
+.bullett.default {
+    display: none;
+    list-style: circle;
+}
+
+.parentDiv {
+    background: #e0f0ff;
+    margin-top: 20px;
+    margin-left: 10px;
+    min-height: 90vh;
+    padding-bottom: 20px;
+}
+
+h1 {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.btn_container {
+    background: #C5D5EA;
+    text-align: center;
+    width: calc(100vw - 10px);
+    top: 0px;
+    vertical-align: top;
+    padding-left: 10px;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.hr {
+    position: relative;
+    display: inline-block;
+    margin-left: -1px;
+    width: 92%;
+    border-bottom: 1px solid #D8D8D8;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.span3 {
+    float: right;
+    margin-right: 8%;
+}

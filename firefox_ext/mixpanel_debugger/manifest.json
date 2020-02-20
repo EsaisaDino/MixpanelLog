@@ -1,0 +1,29 @@
+{
+
+    "manifest_version": 2,
+    "name": "Mixpanel Debugger",
+    "version": "1.0",
+  
+    "description": "Logs Mixpanel events from webpage",
+  
+    "icons": {
+      "48": "icons/icon-blue.png"
+    },
+
+    "devtools_page": "devtools/devtools-page.html",
+
+    "permissions": [
+        "<all_urls>",
+        "activeTab",
+        "webNavigation",
+        "webRequest"
+    ],
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.venngage.com/*", "*://*/*"],
+        "js": ["index.js"]
+      }
+    ]
+  
+  }
