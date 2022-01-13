@@ -1,10 +1,10 @@
 {
   "description": "Log Mixpanel Events",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Mixpanel Log",
-  "version": "1.0",
+  "version": "3",
   "author": "EsaRK",
-  "minimum_chrome_version": "10.0",
+  "minimum_chrome_version": "88.0",
   "icons": {
     "48": "icons/star.png"
   },
